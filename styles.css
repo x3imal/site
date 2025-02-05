@@ -1,0 +1,211 @@
+/* Общие стили */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+/* Блок header */
+.header {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-left: 120px;
+}
+
+.header__logo {
+    height: 50px;
+}
+
+.header__search {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.header__nav-item {
+    margin-left: 20px;
+}
+
+.header__link {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+/* Блок hero */
+.hero {
+    text-align: center;
+    padding: 64px 20px;
+}
+
+.hero__title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+
+.hero__subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.hero__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.hero__link:hover {
+    text-decoration: underline;
+}
+
+/* Блок offers */
+.offers {
+    padding: 32px 20px;
+    text-align: center;
+}
+
+.offers__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 32px;
+}
+
+.offers__product {
+    margin-bottom: 20px;
+}
+
+.offers__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.offers__name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 8px;
+}
+
+.offers__description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-bottom: 12px;
+}
+
+.offers__price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.offers__price--new {
+    color: #050505;
+}
+
+.offers__price--old {
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+/* Блок footer */
+.footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 12px;
+}
+
+.footer__nav-list {
+    list-style: none;
+}
+
+.footer__nav-item {
+    margin-bottom: 8px;
+}
+
+.footer__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.footer__social-icon {
+    margin: 0 10px;
+}
+
+.footer__form {
+    text-align: center;
+}
+
+.footer__form-text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+
+.footer__form-input {
+    padding: 10px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+    margin-bottom: 10px;
+}
+
+.footer__form-button {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    line-height: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.footer__form-button:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <section class="header__top">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип">
+        <input class="header__search" type="text" placeholder="Поиск">
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="catalog.html" class="header__link">Каталог</a></li>
+                <li class="header__nav-item"><a href="cart.html" class="header__link">Корзина</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <section class="hero">
+        <h1 class="hero__title">Все, чего заслуживает ваш дом</h1>
+        <p class="hero__subtitle">Наша мебель — ваше отражение</p>
+        <a href="catalog.html" class="hero__link">Перейти в каталог</a>
+    </section>
+</header>
+
+<section class="offers">
+    <h2 class="offers__title">Специальные предложения</h2>
+    <div class="offers__product">
+        <img class="offers__image" src="img/product1.jpg" alt="Кресло VILORA">
+        <h3 class="offers__name">Кресло VILORA</h3>
+        <p class="offers__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на
+            ощупь ткань</p>
+        <p class="offers__price offers__price--new">21 000</p>
+        <p class="offers__price offers__price--old">28 000</p>
+    </div>
+</section>
+
+<section class="catalog">
+    <h2 class="catalog__title">Каталог товаров</h2>
+    <div class="catalog__product">
+        <img class="catalog__image" src="img/product1.jpg" alt="Кресло VILORA">
+        <h3 class="catalog__name">Кресло VILORA</h3>
+        <p class="catalog__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на
+            ощупь ткань</p>
+        <p class="catalog__price catalog__price--new">21 000</p>
+        <p class="catalog__price catalog__price--old">28 000</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <h4 class="footer__title">Меню</h4>
+    <nav class="footer__nav">
+        <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="index.html" class="footer__link">Главная</a></li>
+            <li class="footer__nav-item"><a href="catalog.html" class="footer__link">Каталог</a></li>
+            <li class="footer__nav-item"><a href="cart.html" class="footer__link">Корзина</a></li>
+        </ul>
+    </nav>
+    <h4 class="footer__title">Контакты</h4>
+    <a href="tel:+79088008080" class="footer__link">+7 908 800 80 80</a>
+    <a href="mailto:help@interier.com" class="footer__link">help@interier.com</a>
+    <div class="footer__social">
+        <a href="https://twitter.com"><img src="img/twitter.svg" alt="twitter" class="footer__social-icon"></a>
+        <a href="https://facebook.com"><img src="img/facebook.svg" alt="facebook" class="footer__social-icon"></a>
+        <a href="https://instagram.com"><img src="img/inst.svg" alt="instagram" class="footer__social-icon"></a>
+    </div>
+    <form class="footer__form">
+        <p class="footer__form-text">Получайте наши новости и обновления</p>
+        <input type="email" class="footer__form-input" placeholder="Введите ваш email">
+        <button type="submit" class="footer__form-button">Подписаться</button>
+    </form>
+</footer>
+
+</body>
+</html>
