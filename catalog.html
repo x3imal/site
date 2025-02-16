@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Каталог Товаров</title>
 </head>
 <body>
 <header>
@@ -25,26 +26,52 @@
     <p>Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань</p>
     <p>21 000</p>
 </section>
-<footer>
-    <h4>Меню</h4>
-    <nav>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="cart.html">Корзина</a></li>
-        </ul>
-    </nav>
-    <h4>Контакты</h4>
-    <a href="tel:+79088008080">+7 908 800 80 80</a>
-    <a href="mailto:help@interier.com">help@interier.com</a>
-    <a href="https://twitter.com"><img src="img/twitter.svg" alt="twitter"></a>
-    <a href="https://facebook.com"><img src="img/facebook.svg" alt="facebook"></a>
-    <a href="https://instagram.com"><img src="img/inst.svg" alt="instagram"></a>
-    <form>
-        <p>Получайте наши новости и обновления</p>
-        <input type="email" placeholder="Введите ваш email">
-        <button type="submit">Подписаться</button>
-    </form>
+<footer class="footer">
+    <div class="center">
+        <div class="footer__logo footer__logo--margin-top">
+            <a href="index.html" class="footer__logo-img" aria-label="Главная страница">
+                <img src="./img/logo_footer.svg" class="footer__logo-pic" alt="Логотип">
+            </a>
+        </div>
+
+        <div class="footer__menu footer__menu--margin-top">
+            <h3 class="footer__menu-title">Меню</h3>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="index.html" class="footer__menu-link">Главная</a></li>
+                <li class="footer__menu-item"><a href="catalog.html" class="footer__menu-link">Каталог</a></li>
+                <li class="footer__menu-item"><a href="cart.html" class="footer__menu-link">Корзина</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__contacts footer__contacts--margin-top">
+            <h3 class="footer__contacts-title">Контакты</h3>
+            <div class="footer__contacts-info">
+                <a href="tel:+79088008080" class="footer__contacts-phone">+7 908 800 80 80</a>
+                <a href="mailto:help@interier.com" class="footer__contacts-email">help@interier.com</a>
+                <div class="footer__contacts-social">
+                    <a href="https://vk.com/" class="footer__social-link" aria-label="ВКонтакте">
+                        <img src="./img/VK.svg" alt="ВКонтакте">
+                    </a>
+                    <a href="https://web.telegram.org/" class="footer__social-link" aria-label="Телеграм">
+                        <img src="./img/TG.svg" alt="Телеграм">
+                    </a>
+                    <a href="https://dzen.ru/" class="footer__social-link" aria-label="Другое">
+                        <img src="./img/XZ.svg" alt="Другое">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer__subscribe footer__subscribe--margin-top">
+            <h3 class="footer__subscribe-title">Получайте наши новости и обновления</h3>
+            <form class="footer__form">
+                <input type="email" class="footer__input" placeholder="Ваш e-mail" required>
+                <button type="submit" class="footer__button">Подписаться</button>
+            </form>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
