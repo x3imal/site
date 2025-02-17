@@ -37,6 +37,14 @@ input, button, textarea, select, optgroup {
     background-repeat: no-repeat;
 }
 
+.top-catalog {
+    background-image: url("./img/bgr_catalog.jpg");
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .header {
     display: flex;
     padding: 16px 0;
@@ -102,6 +110,16 @@ input, button, textarea, select, optgroup {
     word-wrap: break-word;
     font-size: 64px;
     padding-top: 30px;
+    font-weight: 600;
+    line-height: 70px;
+    width: 792px;
+}
+
+.hero__title-catalog {
+    color: #FFFFFF;
+    word-wrap: break-word;
+    font-size: 64px;
+    padding-top: 127px;
     font-weight: 600;
     line-height: 70px;
     width: 792px;
@@ -242,6 +260,12 @@ input, button, textarea, select, optgroup {
     margin-top: 64px;
 }
 
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
 .catalog__list-first {
     display: flex;
     flex-wrap: wrap;
@@ -256,7 +280,7 @@ input, button, textarea, select, optgroup {
 }
 
 .catalog__item {
-    width: 379px;
+    width: 378px;
 }
 
 

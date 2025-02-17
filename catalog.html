@@ -5,27 +5,141 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Каталог Товаров</title>
 </head>
 <body>
-<header>
-    <img src="img/logo.svg" alt="Логотип">
-    <input type="text" placeholder="Поиск">
-    <nav>
-        <ul>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="cart.html">Корзина</a></li>
-        </ul>
-    </nav>
-</header>
-<section>
-    <h1>Каталог</h1>
-    <img src="img/product1.jpg" alt="Кресло VILORA">
-    <h3>Кресло VILORA</h3>
-    <p>Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань</p>
-    <p>21 000</p>
+<section class="top-catalog">
+    <div class='center'>
+        <header class="header">
+            <img class="header__logo" src="./img/logo.svg" alt="Логотип">
+            <input class="header__search" type="text" placeholder="Поиск">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__link">Главная</a></li>
+                    <li class="header__nav-item"><a href="cart.html" class="header__link">Корзина</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero">
+            <h1 class="hero__title-catalog">Кталог</h1>
+        </div>
+    </div>
 </section>
+
+<section class="catalog">
+    <div class="center">
+
+        <div class="catalog__menu">
+            <div class="path">
+                <div class="path_title">Главная</div>
+                <div class="path_title">/</div>
+                <div class="path_title">Каталог товаров</div>
+            </div>
+            <div class="sort">
+                <select>
+                    <option disabled selected>Фильтрация</option>
+                    <option value="price">По цене</option>
+                    <option value="rating">По рейтингу</option>
+                    <option value="new">По новизне</option>
+                </select>
+                <select>
+                    <option disabled selected>По популярности</option>
+                    <option value="popular">Популярные</option>
+                    <option value="less-popular">Менее популярные</option>
+                    <option value="rare">Редкие</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="catalog__list">
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat1.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Кровать TATRAN</h3>
+                <p class="catalog__description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <p class="catalog__price">120 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat2.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Кресло VILORA</h3>
+                <p class="catalog__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная
+                    на ощупь ткань.</p>
+                <p class="catalog__price">21 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat3.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Стол MENU</h3>
+                <p class="catalog__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                <p class="catalog__price">34 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat4.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Диван ASKESTA</h3>
+                <p class="catalog__description">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать.</p>
+                <p class="catalog__price">68 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat5.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Кресло LUNAR</h3>
+                <p class="catalog__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
+                <p class="catalog__price">40 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat6.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Шкаф Nastan</h3>
+                <p class="catalog__description">Мебель может быть оснащена разнообразными системами подсветки.</p>
+                <p class="catalog__price">80 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat1.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Кровать TATRAN</h3>
+                <p class="catalog__description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <p class="catalog__price">120 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat2.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Кресло VILORA</h3>
+                <p class="catalog__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная
+                    на ощупь ткань.</p>
+                <p class="catalog__price">21 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat3.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Стол MENU</h3>
+                <p class="catalog__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                <p class="catalog__price">34 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat4.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Диван ASKESTA</h3>
+                <p class="catalog__description">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать.</p>
+                <p class="catalog__price">68 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat5.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Кресло LUNAR</h3>
+                <p class="catalog__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
+                <p class="catalog__price">40 000 руб.</p>
+            </article>
+            <article class="catalog__item">
+                <img class="catalog__image" src="./img/cat6.jpg" alt="Кресло VILORA">
+                <h3 class="catalog__name">Шкаф Nastan</h3>
+                <p class="catalog__description">Мебель может быть оснащена разнообразными системами подсветки.</p>
+                <p class="catalog__price">80 000 руб.</p>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+<section class="link-box center">
+    <a href="catalog.html">Перейти в каталог</a>
+</section>
+
 <footer class="footer">
     <div class="center">
         <div class="footer__logo footer__logo--margin-top">
