@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Корзина</title>
+</head>
+<body>
+
+<section class="top-cart">
+    <div class='center'>
+        <header class="header">
+            <img class="header__logo" src="./img/logo.svg" alt="Логотип">
+            <input class="header__search" type="text" placeholder="Поиск">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__link">Главная</a></li>
+                    <li><a href="catalog.html" class="header__link">Каталог</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero">
+            <h1 class="hero__title-cart">Корзина</h1>
+        </div>
+    </div>
+</section>
+
+<div class="cart center">
+    <div class="cart__left">
+        <div class="cart__content">
+
+            <div class="cart__header">
+                <p class="cart__header-item">Товар</p>
+                <p class="cart__header-quantity">К-во</p>
+            </div>
+
+            <div class="cart__item">
+                <img class="cart__item-image" src="./img/product_cart1.jpg" alt="Стол MENU">
+                <div class="cart__item-info">
+                    <h3 class="cart__item-title">Стол MENU</h3>
+                    <p>Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                    <p>34 000 руб.</p>
+                    <div class="cart__item-actions">
+                        <a href="#" class="cart__item-favorite">Избранные</a>
+                        <a href="#" class="cart__item-remove">Удалить</a>
+                    </div>
+                </div>
+                <div class="cart__item-quantity">
+                    <p class="item-quantity">1</p>
+                    <img src="./img/quantity_up.png" alt="добавить" class="img-quantity img-quantity-up">
+                    <img src="./img/quantity_down.png" alt="убавить" class="img-quantity img-quantity-down">
+                </div>
+            </div>
+
+            <div class="cart__item">
+                <img class="cart__item-image" src="./img/product_cart2.jpg" alt="Диван NASTAN">
+                <div class="cart__item-info">
+                    <h3 class="cart__item-title">Диван NASTAN</h3>
+                    <p class="cart__item-description">
+                        Модель отличается простой линией и форм, отсутствием броского декора.
+                    </p>
+                    <p class="cart__item-price">80 000 руб.</p>
+                    <div class="cart__item-actions">
+                        <a href="#" class="cart__item-favorite">Избранные</a>
+                        <a href="#" class="cart__item-remove">Удалить</a>
+                    </div>
+                </div>
+                <div class="cart__item-quantity">
+                    <p class="item-quantity">1</p>
+                    <img src="./img/quantity_up.png" alt="добавить" class="img-quantity img-quantity-up">
+                    <img src="./img/quantity_down.png" alt="убавить" class="img-quantity img-quantity-down">
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__buttons">
+            <button class="cart__button cart__button--clear">Очистить корзину</button>
+            <button class="cart__button cart__button--continue">Продолжить покупки</button>
+        </div>
+    </div>
+
+    <div class="cart__right">
+        <div class="cart__form">
+            <h2 class="cart__form-title">Оформление заказа</h2>
+            <input type="text" class="cart__form-input" placeholder="Имя Фамилия">
+            <input type="tel" class="cart__form-input" placeholder="+7 904 000 80 80">
+            <input type="text" class="cart__form-input" placeholder="Адрес доставки">
+            <p class="cart__form-total">Итого: 128 000 руб.</p>
+            <button class="cart__form-button">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="center">
+        <div class="footer__logo footer__logo--margin-top">
+            <a href="index.html" class="footer__logo-img" aria-label="Главная страница">
+                <img src="./img/logo_footer.svg" class="footer__logo-pic" alt="Логотип">
+            </a>
+        </div>
+
+        <div class="footer__menu footer__menu--margin-top">
+            <h3 class="footer__menu-title">Меню</h3>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="index.html" class="footer__menu-link">Главная</a></li>
+                <li class="footer__menu-item"><a href="catalog.html" class="footer__menu-link">Каталог</a></li>
+                <li class="footer__menu-item"><a href="cart.html" class="footer__menu-link">Корзина</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__contacts footer__contacts--margin-top">
+            <h3 class="footer__contacts-title">Контакты</h3>
+            <div class="footer__contacts-info">
+                <a href="tel:+79088008080" class="footer__contacts-phone">+7 908 800 80 80</a>
+                <a href="mailto:help@interier.com" class="footer__contacts-email">help@interier.com</a>
+                <div class="footer__contacts-social">
+                    <a href="https://vk.com/" class="footer__social-link" aria-label="ВКонтакте">
+                        <img src="./img/VK.svg" alt="ВКонтакте">
+                    </a>
+                    <a href="https://web.telegram.org/" class="footer__social-link" aria-label="Телеграм">
+                        <img src="./img/TG.svg" alt="Телеграм">
+                    </a>
+                    <a href="https://dzen.ru/" class="footer__social-link" aria-label="Другое">
+                        <img src="./img/XZ.svg" alt="Другое">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer__subscribe footer__subscribe--margin-top">
+            <h3 class="footer__subscribe-title">Получайте наши новости и обновления</h3>
+            <form class="footer__form">
+                <input type="email" class="footer__input" placeholder="Ваш e-mail" required>
+                <button type="submit" class="footer__button">Подписаться</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -20,43 +20,46 @@
             <input class="header__search" type="text" placeholder="Поиск">
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="index.html" class="header__link">Главная</a></li>
-                    <li class="header__nav-item"><a href="cart.html" class="header__link">Корзина</a></li>
+                    <li><a href="index.html" class="header__link">Главная</a></li>
+                    <li><a href="cart.html" class="header__link">Корзина</a></li>
                 </ul>
             </nav>
         </header>
         <div class="hero">
-            <h1 class="hero__title-catalog">Кталог</h1>
+            <h1 class="hero__title-catalog">Каталог</h1>
         </div>
     </div>
 </section>
 
-<section class="catalog">
-    <div class="center">
+<section class="catalog center">
 
         <div class="catalog__menu">
             <div class="path">
-                <div class="path_title">Главная</div>
-                <div class="path_title">/</div>
-                <div class="path_title">Каталог товаров</div>
+                <div class="path__title">Главная</div>
+                <div class="path__title">/</div>
+                <div class="path__title">Каталог товаров</div>
             </div>
             <div class="sort">
-                <select>
-                    <option disabled selected>Фильтрация</option>
-                    <option value="price">По цене</option>
-                    <option value="rating">По рейтингу</option>
-                    <option value="new">По новизне</option>
-                </select>
-                <select>
-                    <option disabled selected>По популярности</option>
-                    <option value="popular">Популярные</option>
-                    <option value="less-popular">Менее популярные</option>
-                    <option value="rare">Редкие</option>
-                </select>
+                <label>
+                    <select class="sort__filter sort__filter--triage">
+                        <option disabled selected>Фильтрация</option>
+                        <option value="price">По цене</option>
+                        <option value="rating">По рейтингу</option>
+                        <option value="new">По новизне</option>
+                    </select>
+                </label>
+                <label>
+                    <select class="sort__filter sort__filter--popularity">
+                        <option disabled selected>По популярности</option>
+                        <option value="popular">Популярные</option>
+                        <option value="less-popular">Менее популярные</option>
+                        <option value="rare">Редкие</option>
+                    </select>
+                </label>
             </div>
         </div>
 
-        <div class="catalog__list">
+        <div class="catalog__products">
             <article class="catalog__item">
                 <img class="catalog__image" src="./img/cat1.jpg" alt="Кресло VILORA">
                 <h3 class="catalog__name">Кровать TATRAN</h3>
@@ -133,11 +136,10 @@
             </article>
         </div>
 
-    </div>
 </section>
 
 <section class="link-box center">
-    <a href="catalog.html">Перейти в каталог</a>
+    <a class="link-box__link" href="catalog.html">Показать еще</a>
 </section>
 
 <footer class="footer">
