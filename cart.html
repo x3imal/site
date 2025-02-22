@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -53,9 +53,9 @@
                     </div>
                 </div>
                 <div class="cart__item-quantity">
-                    <p class="item-quantity">1</p>
-                    <img src="./img/quantity_up.png" alt="добавить" class="img-quantity img-quantity-up">
-                    <img src="./img/quantity_down.png" alt="убавить" class="img-quantity img-quantity-down">
+                    <button class="quantity-decrease">-</button>
+                    <input class="item-quantity" type="number" value="0">
+                    <button class="quantity-increase">+</button>
                 </div>
             </div>
 
@@ -73,9 +73,9 @@
                     </div>
                 </div>
                 <div class="cart__item-quantity">
-                    <p class="item-quantity">1</p>
-                    <img src="./img/quantity_up.png" alt="добавить" class="img-quantity img-quantity-up">
-                    <img src="./img/quantity_down.png" alt="убавить" class="img-quantity img-quantity-down">
+                    <button class="quantity-decrease">-</button>
+                    <input class="item-quantity" type="number" value="0">
+                    <button class="quantity-increase">+</button>
                 </div>
             </div>
         </div>
@@ -98,6 +98,46 @@
     </div>
 </div>
 
+<section class="offers center">
+    <h2 class="offers__title">Специальные предложения</h2>
+    <div class="offers__list">
+
+        <article class="offer">
+            <img class="offer__image" src="./img/chandelier_VODA.jpeg" alt="Люстра VODA">
+            <h3 class="offer__name">Люстра VODA</h3>
+            <p class="offer__description">Основание из полированной нержавеющей стали, придаёт оригинальный парящий
+                эффект.</p>
+            <div class="offer__price-container">
+                <p class="offer__price">45 000 руб.</p>
+                <p class="offer__price offer__price--old">67 000 руб.</p>
+            </div>
+        </article>
+
+        <article class="offer">
+            <img class="offer__image" src="./img/sofa_RONALD.jpeg" alt="Диван RONALD">
+            <h3 class="offer__name">Диван RONALD</h3>
+            <p class="offer__description">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+            <div class="offer__price-container">
+                <p class="offer__price">156 000 руб.</p>
+                <p class="offer__price offer__price--old">198 000 руб.</p>
+            </div>
+        </article>
+
+        <article class="offer">
+            <img class="offer__image" src="./img/dresser_VENT.jpeg" alt="Комод VENT">
+            <h3 class="offer__name">Комод VENT</h3>
+            <p class="offer__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <div class="offer__price-container">
+                <p class="offer__price">34 000 руб.</p>
+                <p class="offer__price offer__price--old">45 000 руб.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="link-box center">
+    <a class="link-box__link" href="catalog.html">Перейти в каталог</a>
+</section>
 
 <footer class="footer">
     <div class="center">
