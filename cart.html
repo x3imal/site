@@ -17,7 +17,9 @@
 <section class="top-cart">
     <div class='center'>
         <header class="header">
-            <img class="header__logo" src="./img/logo.svg" alt="Логотип">
+            <a href="index.html" class="logo">
+                <img class="header__logo" src="./img/logo.svg" alt="Логотип">
+            </a>
             <input class="header__search" type="text" placeholder="Поиск">
             <nav class="header__nav">
                 <ul class="header__nav-list">
@@ -41,7 +43,7 @@
                 <p class="cart__header-quantity">К-во</p>
             </div>
 
-            <div class="cart__item">
+            <article class="cart__item">
                 <img class="cart__item-image" src="./img/product_cart1.jpg" alt="Стол MENU">
                 <div class="cart__item-info">
                     <h3 class="cart__item-title">Стол MENU</h3>
@@ -54,12 +56,12 @@
                 </div>
                 <div class="cart__item-quantity">
                     <button class="quantity-decrease">-</button>
-                    <input class="item-quantity" type="number" value="0">
+                    <input class="item-quantity" type="number" value="0" min="0">
                     <button class="quantity-increase">+</button>
                 </div>
-            </div>
+            </article>
 
-            <div class="cart__item">
+            <article class="cart__item">
                 <img class="cart__item-image" src="./img/product_cart2.jpg" alt="Диван NASTAN">
                 <div class="cart__item-info">
                     <h3 class="cart__item-title">Диван NASTAN</h3>
@@ -74,10 +76,10 @@
                 </div>
                 <div class="cart__item-quantity">
                     <button class="quantity-decrease">-</button>
-                    <input class="item-quantity" type="number" value="0">
+                    <input class="item-quantity" type="number" value="0" min="0">
                     <button class="quantity-increase">+</button>
                 </div>
-            </div>
+            </article>
         </div>
 
         <div class="cart__buttons">
@@ -87,14 +89,17 @@
     </div>
 
     <div class="cart__right">
-        <div class="cart__form">
+        <form class="cart__form">
             <h2 class="cart__form-title">Оформление заказа</h2>
             <input type="text" class="cart__form-input" placeholder="Имя Фамилия">
             <input type="tel" class="cart__form-input" placeholder="+7 904 000 80 80">
             <input type="text" class="cart__form-input" placeholder="Адрес доставки">
-            <p class="cart__form-total">Итого: 128 000 руб.</p>
+            <p class="cart__form-total">
+                <span class="cart__form-total-label">Итого:</span>
+                <span class="cart__form-total-amount">128 000 руб.</span>
+            </p>
             <button class="cart__form-button">Оформить заказ</button>
-        </div>
+        </form>
     </div>
 </div>
 

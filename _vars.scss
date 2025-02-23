@@ -1,1 +1,39 @@
+// Цвета
 $color-text: #FFFFFF;
+$color-background-footer-button: rgba(222, 215, 215, 0.41);
+$color-background-footer-input: #C4C4C4;
+$color-background: #F7F6F6;
+$color-primary: #050505;
+$color-secondary: #888888;
+$color-border: #CACDD8;
+$color-button-border: #040404;
+$color-button-background: #F7F6F6;
+$color-quantity-background: #F7F6F6;
+$color-quantity-button: #ccc;
+
+// Шрифты
+$font-family: "Montserrat", serif;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-medium: 18px;
+$font-size-large: 24px;
+$font-size-xlarge: 48px;
+$font-size-xxlarge: 64px;
+
+// Отступы
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
+$spacing-xlarge: 64px;
+
+// Размеры
+$max-width: 1222px;
+$header-height: 44px;
+$footer-height: 207px;
+$cart-height: 400px;
+$cart-form-width: 290px;
+$cart-item-gap: 31px;
+$cart-item-padding: 25px;
+$cart-button-padding: 10px 34px 10px 33px;
+$cart-quantity-width: 71px;
+$cart-quantity-height: 51px;
