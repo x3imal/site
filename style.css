@@ -221,20 +221,31 @@
 }
 
 .form {
-  max-width: 400px;
+  max-width: 548px;
+  max-height: 542px;
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   font-family: "Montserrat", serif;
-  padding: 40px 48px;
 }
 .form__box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 36px;
+  padding: 40px 48px;
+}
+.form__box-up-section {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
 }
 .form__section {
   margin-bottom: 20px;
+}
+.form__section-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .form__label {
   display: block;
