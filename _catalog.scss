@@ -1,0 +1,93 @@
+@use 'vars' as *;
+
+.form {
+  max-width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: $font-family;
+  padding: 40px 48px;
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+  }
+
+
+  &__section {
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  &__radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__input:checked {
+    background-color: #fe0000;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #333;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+
+  &__input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__input:checked {
+    background-color: #333;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #333;
+  }
+}

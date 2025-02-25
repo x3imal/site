@@ -220,6 +220,84 @@
   background: transparent;
 }
 
+.form {
+  max-width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: "Montserrat", serif;
+  padding: 40px 48px;
+}
+.form__box {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+.form__section {
+  margin-bottom: 20px;
+}
+.form__label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+.form__radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.radio__input {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.radio__input:checked {
+  background-color: #fe0000;
+}
+.radio__text {
+  font-size: 14px;
+  color: #333;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.checkbox__input {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.checkbox__input:checked {
+  background-color: #333;
+}
+.checkbox__text {
+  font-size: 14px;
+  color: #333;
+}
+
 /* Общие стили */
 * {
   padding: 0;
