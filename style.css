@@ -221,18 +221,55 @@
 }
 
 .form {
-  max-width: 548px;
-  max-height: 542px;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  display: inline-flex;
+  padding: 40px 48px;
+  gap: 10px;
   font-family: "Montserrat", serif;
+  background: #FFF;
+  box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
+}
+.form__label {
+  display: flex;
+  font-size: 16px;
+  color: #050505;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.form__range {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form__range-input {
+  width: 100%;
+  appearance: none;
+  height: 2px;
+  background: black;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+.form__range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.form__range-label {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .form__box {
   display: flex;
   flex-direction: column;
   gap: 36px;
-  padding: 40px 48px;
 }
 .form__box-up-section {
   display: flex;
@@ -243,21 +280,19 @@
   margin-bottom: 20px;
 }
 .form__section-left {
+  max-width: 190px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.form__label {
-  display: block;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
 .form__radio-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+}
+.form__radio-group-input {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .form__checkbox-group {
   display: flex;
@@ -268,7 +303,7 @@
 .radio {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 14px;
 }
 .radio__input {
   appearance: none;
@@ -279,12 +314,22 @@
   cursor: pointer;
   position: relative;
 }
+.radio__input:checked::before {
+  content: "✔";
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .radio__input:checked {
-  background-color: #fe0000;
+  background-color: transparent;
 }
 .radio__text {
   font-size: 14px;
-  color: #333;
+  color: #000;
+  font-weight: 400;
 }
 
 .checkbox {
@@ -302,11 +347,20 @@
   position: relative;
 }
 .checkbox__input:checked {
-  background-color: #333;
+  background-color: transparent;
 }
 .checkbox__text {
   font-size: 14px;
   color: #333;
+}
+.checkbox__input:checked::before {
+  content: "✔";
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Общие стили */

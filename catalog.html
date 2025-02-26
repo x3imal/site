@@ -67,38 +67,47 @@
 
                 <div class="form__section-left">
 
-                    <label class="form__label">Срок доставки</label>
                     <div class="form__radio-group">
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="delivery" value="immediately" checked>
-                            <span class="radio__text">Неважно</span>
-                        </label>
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="delivery" value="today">
-                            <span class="radio__text">Сегодня</span>
-                        </label>
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="delivery" value="tomorrow">
-                            <span class="radio__text">Завтра</span>
-                        </label>
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="delivery" value="3days">
-                            <span class="radio__text">До 3 дней</span>
-                        </label>
-                        <label class="radio">
-                            <input class="radio__input" type="radio" name="delivery" value="7days">
-                            <span class="radio__text">До 7 дней</span>
-                        </label>
+
+                        <label class="form__label">Срок доставки</label>
+
+                        <div class="form__radio-group-input">
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="delivery" value="immediately" checked>
+                                <span class="radio__text">Неважно</span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="delivery" value="today">
+                                <span class="radio__text">Сегодня</span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="delivery" value="tomorrow">
+                                <span class="radio__text">Завтра</span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="delivery" value="3days">
+                                <span class="radio__text">До 3 дней</span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="delivery" value="7days">
+                                <span class="radio__text">До 7 дней</span>
+                            </label>
+                        </div>
+
                     </div>
 
-                    <label class="form__label">Цена</label>
                     <div class="form__range">
-                        <span class="form__range-label">от 0 руб. до 1000000 руб.</span>
-                        <input class="form__range-input" type="range" min="0" max="1000000" value="0">
+                        <label class="form__label">Цена</label>
+                        <div class="form__range-label">
+                            <span class="range-label__min"> от 0 руб.</span>
+                            <span class="range-label__max">до 100000 руб.</span>
+                        </div>
+                        <input class="form__range-input" type="range" min="0" max="100000" value="0">
                     </div>
 
-                    <label class="form__label">Цвет</label>
+
                     <div class="form__color-group">
+                        <label class="form__label">Цвет</label>
                         <label class="color">
                             <input class="color__input" type="radio" name="color" value="white">
                             <span class="color__swatch" style="background-color: white;"></span>
@@ -143,10 +152,11 @@
                 </div>
 
                 <div class="form__section-right">
-                    <label class="form__label">Тип комнаты</label>
                     <div class="form__checkbox-group">
+                        <label class="form__label">Тип комнаты</label>
                         <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="kitchen-dining" checked>
+                            <input class="checkbox__input" type="checkbox" name="room-type" value="kitchen-dining"
+                                   checked>
                             <span class="checkbox__text">Кухня и столовая</span>
                         </label>
                         <label class="checkbox">
