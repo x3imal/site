@@ -228,6 +228,11 @@
   background: #FFF;
   box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
 }
+.form__color-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 .form__label {
   display: flex;
   font-size: 16px;
@@ -260,11 +265,14 @@
   cursor: pointer;
 }
 .form__range-label {
+  display: flex;
+  justify-content: space-between;
   color: #000;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  gap: 14px;
 }
 .form__box {
   display: flex;
@@ -288,6 +296,7 @@
 .form__radio-group {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 .form__radio-group-input {
   display: flex;
@@ -361,6 +370,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.color {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #888;
+  background: #FFF;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.color__box-first {
+  display: flex;
+  gap: 14px;
+}
+.color__box-second {
+  display: flex;
+  gap: 14px;
 }
 
 /* Общие стили */

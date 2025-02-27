@@ -8,6 +8,13 @@
   background: #FFF;
   box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
 
+
+  &__color-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
   &__label {
     display: flex;
     font-size: 16px;
@@ -43,11 +50,14 @@
     }
 
     &-label {
+      display: flex;
+      justify-content: space-between;
       color: #000;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      gap: 14px;
     }
 
   }
@@ -79,6 +89,7 @@
   &__radio-group {
     display: flex;
     flex-direction: column;
+    gap: 16px;
   }
 
   &__radio-group-input {
@@ -169,7 +180,26 @@
 
 
 
+.color {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #888;
+  background: #FFF;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  cursor: pointer;
 
-.form__box-down-section {
+  &__box-first {
+    display: flex;
+    gap: 14px;
+  }
 
+
+  &__box-second {
+    display: flex;
+    gap: 14px;
+  }
 }
+
+
