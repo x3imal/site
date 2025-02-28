@@ -373,22 +373,44 @@
 }
 
 .color {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.color__input {
+  display: none;
+}
+
+.color__swatch {
+  display: inline-block;
   width: 15px;
   height: 15px;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.color__input:checked + .color__swatch {
   border: 1px solid #888;
   background: #FFF;
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 50%;
-  cursor: pointer;
 }
-.color__box-first {
-  display: flex;
-  gap: 14px;
+
+.color__input:checked + .color__swatch::after {
+  content: "✔";
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.color__box-second {
+
+.color__box-first, .color__box-second {
   display: flex;
-  gap: 14px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 /* Общие стили */
