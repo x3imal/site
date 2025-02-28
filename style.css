@@ -258,8 +258,8 @@
 .form__range-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   background: black;
   border-radius: 50%;
   cursor: pointer;
