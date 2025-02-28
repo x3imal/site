@@ -113,9 +113,9 @@
 
   &__input {
     appearance: none;
-    width: 16px;
-    height: 16px;
-    border: 2px solid #333;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
@@ -123,7 +123,7 @@
 
   &__input:checked::before {
     content: '✔';
-    font-size: 12px;
+    font-size: 10px;
     color: #333;
     position: absolute;
     top: 50%;
@@ -152,7 +152,7 @@
     appearance: none;
     width: 16px;
     height: 16px;
-    border: 2px solid #333;
+    border: 1px solid #333;
     border-radius: 4px;
     cursor: pointer;
     position: relative;
@@ -169,7 +169,7 @@
 
   &__input:checked::before {
     content: '✔';
-    font-size: 12px;
+    font-size: 10px;
     color: #333;
     position: absolute;
     top: 50%;
@@ -244,20 +244,19 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   transition: all 0.3s;
   position: relative;
 }
 
 .color__input:checked + .color__swatch {
-  border: 1px solid #888;
+  border: 1px solid #000000;
   background: #FFF;
 }
 
 .color__input:checked + .color__swatch::after {
   content: '✔';
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 10px;
   color: black;
   position: absolute;
   top: 50%;
@@ -269,4 +268,5 @@
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
