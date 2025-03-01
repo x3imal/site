@@ -220,18 +220,51 @@
   background: transparent;
 }
 
+.filter-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.filter-wrapper:focus-within .form {
+  display: inline-flex;
+}
+
 .form {
   display: inline-flex;
+  position: absolute;
+  top: 100%;
+  right: 0;
   padding: 40px 48px;
   gap: 10px;
   font-family: "Montserrat", serif;
   background: #FFF;
   box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
 }
-.form__color-group {
+.form__box {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 36px;
+  min-width: 446px;
+}
+.form__box-up-section {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+}
+.form__box-down-section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.form__section {
+  margin-bottom: 20px;
+}
+.form__section-left {
+  max-width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.form__section-right {
+  min-width: 190px;
 }
 .form__label {
   display: flex;
@@ -240,6 +273,16 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.form__radio-group, .form__checkbox-group, .form__color-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.form__radio-group-input {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .form__range {
   display: flex;
@@ -269,50 +312,7 @@
   justify-content: space-between;
   color: #000;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  gap: 14px;
-}
-.form__box {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-}
-.form__box-up-section {
-  display: flex;
-  flex-direction: row;
-  gap: 65px;
-}
-.form__box-down-section {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.form__section {
-  margin-bottom: 20px;
-}
-.form__section-left {
-  max-width: 190px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.form__section-right {
-  min-width: 190px;
-}
-.form__radio-group {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.form__radio-group-input {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.form__checkbox-group {
-  display: flex;
-  flex-direction: column;
   gap: 14px;
 }
 
@@ -330,17 +330,18 @@
   cursor: pointer;
   position: relative;
 }
+.radio__input:checked {
+  background-color: transparent;
+  border: 1px solid #000000;
+}
 .radio__input:checked::before {
   content: "✔";
   font-size: 10px;
   color: #333;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.radio__input:checked {
-  background-color: transparent;
 }
 .radio__text {
   font-size: 14px;
@@ -363,19 +364,20 @@
 }
 .checkbox__input:checked {
   background-color: transparent;
-}
-.checkbox__text {
-  font-size: 14px;
-  color: #333;
+  border: 1px solid #000000;
 }
 .checkbox__input:checked::before {
   content: "✔";
   font-size: 10px;
   color: #333;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.checkbox__text {
+  font-size: 14px;
+  color: #333;
 }
 
 .color {
@@ -383,11 +385,9 @@
   cursor: pointer;
   position: relative;
 }
-
 .color__input {
   display: none;
 }
-
 .color__swatch {
   display: inline-block;
   width: 15px;
@@ -396,20 +396,19 @@
   transition: all 0.3s;
   position: relative;
 }
-
 .color__input:checked + .color__swatch {
   border: 1px solid #000000;
   background: #FFF;
 }
-
 .color__input:checked + .color__swatch::after {
   content: "✔";
   font-size: 10px;
-  color: black;
+  color: white;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
 }
 
 .color__box-first, .color__box-second {
@@ -437,6 +436,14 @@
 
 .form__toggle {
   display: none;
+}
+
+.sort__filter--triage {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
 }
 
 /* Общие стили */
@@ -758,6 +765,7 @@ input, button, textarea, select, optgroup {
   padding-right: 54px;
 }
 .sort__filter--triage {
+  cursor: pointer;
   color: #050505;
   font-size: 16px;
   font-style: normal;

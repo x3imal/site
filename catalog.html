@@ -42,13 +42,179 @@
             <div class="path__title">Каталог товаров</div>
         </div>
         <div class="sort">
-            <label for="form-toggle" class="sort__filter sort__filter--triage">
-                <select>
-                    <option disabled selected>Фильтрация</option>
-                </select>
-            </label>
+            <div class="filter-wrapper">
+                <label>
+                    <input type="button" class="sort__filter sort__filter--triage" value="Фильтрация">
+                </label>
 
-            <input type="checkbox" id="form-toggle" class="form__toggle">
+                <div class="form">
+                    <form class="form__box">
+                        <div class="form__box-up-section">
+                            <div class="form__section-left">
+                                <div class="form__radio-group">
+                                    <label class="form__label">Срок доставки</label>
+                                    <div class="form__radio-group-input">
+                                        <label class="radio">
+                                            <input class="radio__input" type="radio" name="delivery" value="immediately"
+                                                   checked>
+                                            <span class="radio__text">Неважно</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input class="radio__input" type="radio" name="delivery" value="today">
+                                            <span class="radio__text">Сегодня</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input class="radio__input" type="radio" name="delivery" value="tomorrow">
+                                            <span class="radio__text">Завтра</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input class="radio__input" type="radio" name="delivery" value="3days">
+                                            <span class="radio__text">До 3 дней</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input class="radio__input" type="radio" name="delivery" value="7days">
+                                            <span class="radio__text">До 7 дней</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form__range">
+                                    <label class="form__label">Цена</label>
+                                    <div class="form__range-label">
+                                        <span class="range-label__min"> от 0 руб.</span>
+                                        <span class="range-label__max">до 100000 руб.</span>
+                                    </div>
+                                    <input class="form__range-input" type="range" min="0" max="100000" value="0">
+                                </div>
+
+                                <div class="form__color-group">
+                                    <div class="form__color-title">
+                                        <label class="form__label">Цвет</label>
+                                    </div>
+                                    <div class="color__box-first">
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="white">
+                                            <span class="color__swatch"
+                                                  style="background-color: white; border: 1px solid #000;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="black">
+                                            <span class="color__swatch" style="background-color: black;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="gray">
+                                            <span class="color__swatch" style="background-color: gray;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="red">
+                                            <span class="color__swatch" style="background-color: red;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="orange">
+                                            <span class="color__swatch" style="background-color: orange;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="yellow">
+                                            <span class="color__swatch" style="background-color: yellow;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="green">
+                                            <span class="color__swatch" style="background-color: green;"></span>
+                                        </label>
+                                    </div>
+                                    <div class="color__box-second">
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="teal">
+                                            <span class="color__swatch" style="background-color: teal;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="blue">
+                                            <span class="color__swatch" style="background-color: blue;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="darkblue">
+                                            <span class="color__swatch" style="background-color: darkblue;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="purple">
+                                            <span class="color__swatch" style="background-color: purple;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="violet">
+                                            <span class="color__swatch" style="background-color: violet;"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="lavender">
+                                            <span class="color__swatch"
+                                                  style="background-color: lavender"></span>
+                                        </label>
+                                        <label class="color">
+                                            <input class="color__input" type="checkbox" name="color" value="pink">
+                                            <span class="color__swatch" style="background-color: pink;"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__section-right">
+                                <div class="form__checkbox-group">
+                                    <label class="form__label">Тип комнаты</label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type"
+                                               value="kitchen-dining">
+                                        <span class="checkbox__text">Кухня и столовая</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type" value="bathroom">
+                                        <span class="checkbox__text">Ванная комната</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type"
+                                               value="kids-room">
+                                        <span class="checkbox__text">Детская комната</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type"
+                                               value="living-room">
+                                        <span class="checkbox__text">Гостинная</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type" value="bedroom">
+                                        <span class="checkbox__text">Спальня</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type" value="hallway">
+                                        <span class="checkbox__text">Прихожая</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type" value="balcony">
+                                        <span class="checkbox__text">Балкон</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type" value="garage">
+                                        <span class="checkbox__text">Гараж</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type" value="yard">
+                                        <span class="checkbox__text">Двор</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="room-type" value="garden">
+                                        <span class="checkbox__text">Сад</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__box-down-section">
+                            <div class="button-box">
+                                <button class="form__submit">Применить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
 
             <label>
                 <select class="sort__filter sort__filter--popularity">
@@ -61,182 +227,6 @@
         </div>
     </div>
 
-    <div class="form">
-
-        <form class="form__box">
-
-            <div class="form__box-up-section">
-
-                <div class="form__section-left">
-
-                    <div class="form__radio-group">
-
-                        <label class="form__label">Срок доставки</label>
-
-                        <div class="form__radio-group-input">
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="delivery" value="immediately" checked>
-                                <span class="radio__text">Неважно</span>
-                            </label>
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="delivery" value="today">
-                                <span class="radio__text">Сегодня</span>
-                            </label>
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="delivery" value="tomorrow">
-                                <span class="radio__text">Завтра</span>
-                            </label>
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="delivery" value="3days">
-                                <span class="radio__text">До 3 дней</span>
-                            </label>
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="delivery" value="7days">
-                                <span class="radio__text">До 7 дней</span>
-                            </label>
-                        </div>
-
-                    </div>
-
-                    <div class="form__range">
-                        <label class="form__label">Цена</label>
-                        <div class="form__range-label">
-                            <span class="range-label__min"> от 0 руб.</span>
-                            <span class="range-label__max">до 100000 руб.</span>
-                        </div>
-                        <input class="form__range-input" type="range" min="0" max="100000" value="0">
-                    </div>
-
-
-                    <div class="form__color-group">
-
-                        <div class="form__color-title">
-                            <label class="form__label">Цвет</label>
-                        </div>
-
-                        <div class="color__box-first">
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="white">
-                                <span class="color__swatch"
-                                      style="background-color: white; border: 1px solid #000;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="black">
-                                <span class="color__swatch" style="background-color: black;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="gray">
-                                <span class="color__swatch" style="background-color: gray;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="red">
-                                <span class="color__swatch" style="background-color: red;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="orange">
-                                <span class="color__swatch" style="background-color: orange;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="yellow">
-                                <span class="color__swatch" style="background-color: yellow;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="green">
-                                <span class="color__swatch" style="background-color: green;"></span>
-                            </label>
-                        </div>
-                        <div class="color__box-second">
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="teal">
-                                <span class="color__swatch" style="background-color: teal;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="blue">
-                                <span class="color__swatch" style="background-color: blue;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="darkblue">
-                                <span class="color__swatch" style="background-color: darkblue;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="purple">
-                                <span class="color__swatch" style="background-color: purple;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="violet">
-                                <span class="color__swatch" style="background-color: violet;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="lavender">
-                                <span class="color__swatch"
-                                      style="background-color: lavender; border: 2px solid black;"></span>
-                            </label>
-                            <label class="color">
-                                <input class="color__input" type="checkbox" name="color" value="pink">
-                                <span class="color__swatch" style="background-color: pink;"></span>
-                            </label>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="form__section-right">
-                    <div class="form__checkbox-group">
-                        <label class="form__label">Тип комнаты</label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="kitchen-dining"
-                                   checked>
-                            <span class="checkbox__text">Кухня и столовая</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="bathroom" checked>
-                            <span class="checkbox__text">Ванная комната</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="kids-room">
-                            <span class="checkbox__text">Детская комната</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="living-room">
-                            <span class="checkbox__text">Гостинная</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="bedroom">
-                            <span class="checkbox__text">Спальня</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="hallway">
-                            <span class="checkbox__text">Прихожая</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="balcony">
-                            <span class="checkbox__text">Балкон</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="garage">
-                            <span class="checkbox__text">Гараж</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="yard">
-                            <span class="checkbox__text">Двор</span>
-                        </label>
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="room-type" value="garden">
-                            <span class="checkbox__text">Сад</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form__box-down-section">
-                <div class="button-box">
-                    <button class="form__submit">Применить</button>
-                </div>
-            </div>
-
-        </form>
-    </div>
 
     <div class="catalog__products">
         <article class="catalog__item">

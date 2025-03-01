@@ -347,6 +347,7 @@ input, button, textarea, select, optgroup {
         padding-right: 54px;
 
         &--triage {
+            cursor: pointer;
             color: $color-primary;
             font-size: $font-size-base;
             font-style: normal;
@@ -530,3 +531,4 @@ input, button, textarea, select, optgroup {
         color: $color-border;
     }
 }
+
