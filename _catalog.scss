@@ -112,7 +112,6 @@
   }
 }
 
-// Радиокнопки
 .radio {
   display: flex;
   align-items: center;
@@ -150,7 +149,6 @@
   }
 }
 
-// Чекбоксы
 .checkbox {
   display: flex;
   align-items: center;
@@ -186,7 +184,6 @@
   }
 }
 
-// Цветовые метки
 .color {
   display: inline-block;
   cursor: pointer;
@@ -228,7 +225,6 @@
   justify-content: space-between;
 }
 
-// Кнопка применения фильтров
 .button-box {
   display: flex;
   width: 190px;
@@ -250,7 +246,6 @@
   display: none;
 }
 
-// Стили для кнопки сортировки
 .sort__filter--triage {
   cursor: pointer;
   appearance: none;
