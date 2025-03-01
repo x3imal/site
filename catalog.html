@@ -42,11 +42,13 @@
             <div class="path__title">Каталог товаров</div>
         </div>
         <div class="sort">
-            <label>
-                <select class="sort__filter sort__filter--triage">
+            <label for="form-toggle" class="sort__filter sort__filter--triage">
+                <select>
                     <option disabled selected>Фильтрация</option>
                 </select>
             </label>
+
+            <input type="checkbox" id="form-toggle" class="form__toggle">
 
             <label>
                 <select class="sort__filter sort__filter--popularity">
