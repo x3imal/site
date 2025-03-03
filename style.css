@@ -446,6 +446,15 @@
   background: transparent;
 }
 
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for__item {
+    height: 268px;
+  }
+}
 /* Общие стили */
 * {
   padding: 0;
@@ -553,12 +562,12 @@ input, button, textarea, select, optgroup {
 
 .hero__title {
   color: #FFFFFF;
+  width: 100%;
   word-wrap: break-word;
   font-size: 64px;
   padding-top: 30px;
   font-weight: 600;
   line-height: 70px;
-  width: 792px;
 }
 .hero__title-catalog {
   padding-top: 94px;

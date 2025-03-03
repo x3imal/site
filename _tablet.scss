@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for {
+    &__item {
+      height: 268px;
+    }
+  }
+}

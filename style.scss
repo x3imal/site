@@ -1,6 +1,7 @@
 @use 'vars' as *;
 @use 'cart';
 @use 'catalog';
+@use 'tablet';
 
 /* Общие стили */
 * {
@@ -110,12 +111,12 @@ input, button, textarea, select, optgroup {
 
 .hero__title {
     color: $color-text;
+    width: 100%;
     word-wrap: break-word;
     font-size: $font-size-xxlarge;
     padding-top: 30px;
     font-weight: 600;
     line-height: 70px;
-    width: 792px;
 
     &-catalog {
         padding-top: 94px;
