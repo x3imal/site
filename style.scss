@@ -203,7 +203,8 @@ input, button, textarea, select, optgroup {
     }
 
     &__list {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
         flex-wrap: wrap;
         column-gap: $spacing-large;
         width: 100%;
@@ -212,7 +213,6 @@ input, button, textarea, select, optgroup {
 }
 
 .offer {
-    width: 378px;
     display: flex;
     flex-direction: column;
     margin-top: $spacing-large;
@@ -273,23 +273,19 @@ input, button, textarea, select, optgroup {
 
     &__list-first,
     &__list-second {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
         justify-content: space-between;
-    }
-
-    &__list-first {
-        margin-bottom: 56px;
     }
 
     &__item {
         width: 378px;
+        margin-bottom: 56px;
     }
 
     &__title {
         font-size: $font-size-xlarge;
         font-weight: 600;
-        padding-bottom: $spacing-large;
         line-height: 59px;
     }
 

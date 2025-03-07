@@ -3,23 +3,22 @@
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
+
   .for__item {
     height: 268px;
   }
 
   .offers__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     column-gap: 29px;
     width: 100%;
-    padding: 0 8px;
   }
 
   .footer__logo {
     display: none;
   }
+
 }
 
-
-//grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); не забыть удалить ширину фикс у товара display grid
 
