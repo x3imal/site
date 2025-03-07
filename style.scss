@@ -1,7 +1,6 @@
 @use 'vars' as *;
 @use 'cart';
 @use 'catalog';
-@use 'tablet';
 
 /* Общие стили */
 * {
@@ -206,9 +205,9 @@ input, button, textarea, select, optgroup {
     }
 
     &__list {
-        margin-top: $spacing-large;
         display: flex;
         flex-wrap: wrap;
+        column-gap: $spacing-large;
         width: 100%;
         justify-content: space-between;
     }
@@ -218,6 +217,7 @@ input, button, textarea, select, optgroup {
     width: 378px;
     display: flex;
     flex-direction: column;
+    margin-top: $spacing-large;
 
     &__image {
         padding-bottom: 10px;
@@ -533,3 +533,4 @@ input, button, textarea, select, optgroup {
     }
 }
 
+@use 'tablet';

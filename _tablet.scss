@@ -3,9 +3,20 @@
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
-  .for {
-    &__item {
-      height: 268px;
-    }
+  .for .for__item {
+    height: 268px;
+  }
+
+  .offers .offers__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 29px;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .footer .footer__logo {
+    display: none;
   }
 }
+
