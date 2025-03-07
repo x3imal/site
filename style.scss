@@ -1,6 +1,4 @@
 @use 'vars' as *;
-@use 'cart';
-@use 'catalog';
 
 /* Общие стили */
 * {
@@ -533,4 +531,6 @@ input, button, textarea, select, optgroup {
     }
 }
 
-@use 'tablet';
+@import 'tablet';
+@import 'cart';
+@import 'catalog';
