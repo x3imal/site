@@ -52,6 +52,10 @@ input, button, textarea, select, optgroup {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $color-text;
+
+    &__mob {
+        display: none;
+    }
 }
 
 .header__nav-list {
@@ -527,6 +531,7 @@ input, button, textarea, select, optgroup {
     }
 }
 
-@import 'tablet';
 @import 'cart';
 @import 'catalog';
+@import 'tablet';
+@import 'mobile';

@@ -1,11 +1,23 @@
+@use "vars" as *;
+
 @media (max-width: 1024px) {
   .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding: 0 8px;
   }
 
   .for__item {
     height: 268px;
+  }
+
+  .cart {
+    display: flex ;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .cart__right {
+    width: 376px ;
+
   }
 
   .offers__list {
@@ -19,6 +31,11 @@
     display: none;
   }
 
+  .cart__button--continue {
+    border-radius: 50px;
+    background: var(--Color---7, #000);
+    color: #FFF;
+  }
 }
 
 
