@@ -10,13 +10,13 @@
   }
 
   .cart {
-    display: flex ;
+    display: flex;
     flex-direction: column;
     gap: 64px;
   }
 
   .cart__right {
-    width: 376px ;
+    width: 376px;
 
   }
 
@@ -36,6 +36,24 @@
     background: var(--Color---7, #000);
     color: #FFF;
   }
+
+  .form {
+    display: none;
+
+    &__tablet {
+      display: inline-flex;
+      position: absolute;
+      top: 63%;
+      right: 0;
+      padding: 40px 48px;
+      gap: 10px;
+      font-family: $font-family;
+      background: #FFF;
+      box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
+    }
+  }
+
+
 }
 
 

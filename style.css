@@ -709,6 +709,16 @@ input, button, textarea, select, optgroup {
   display: inline-flex;
 }
 
+.sort__filter--triage {
+  background-image: url("./img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .form {
   display: inline-flex;
   position: absolute;
@@ -719,6 +729,9 @@ input, button, textarea, select, optgroup {
   font-family: "Montserrat", serif;
   background: #FFF;
   box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
+}
+.form__tablet {
+  display: none;
 }
 .form__box {
   display: flex;
@@ -919,14 +932,6 @@ input, button, textarea, select, optgroup {
   display: none;
 }
 
-.sort__filter--triage {
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: transparent;
-}
-
 @media (max-width: 1024px) {
   .center {
     padding: 0 8px;
@@ -956,6 +961,20 @@ input, button, textarea, select, optgroup {
     background: var(--Color---7, #000);
     color: #FFF;
   }
+  .form {
+    display: none;
+  }
+  .form__tablet {
+    display: inline-flex;
+    position: absolute;
+    top: 63%;
+    right: 0;
+    padding: 40px 48px;
+    gap: 10px;
+    font-family: "Montserrat", serif;
+    background: #FFF;
+    box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
+  }
 }
 @media (max-width: 767px) {
   .center {
@@ -978,10 +997,15 @@ input, button, textarea, select, optgroup {
   }
   .hero {
     align-items: center;
+    margin-top: 0;
   }
   .hero__title {
     text-align: center;
     font-size: 48px;
+  }
+  .hero__title-catalog {
+    width: 100%;
+    padding-top: 82px;
   }
   .hero__subtitle {
     font-size: 16px;
@@ -1052,9 +1076,66 @@ input, button, textarea, select, optgroup {
   .footer__subscribe {
     grid-column: span 2;
     align-items: center;
+    padding-bottom: 33px;
   }
   .footer__contacts {
     align-items: center;
+  }
+  .hero__title-catalog {
+    font-size: 48px;
+    text-align: center;
+  }
+  .catalog__menu {
+    flex-direction: column;
+  }
+  .form__tablet {
+    display: none;
+  }
+  .sort {
+    flex-direction: column-reverse;
+    padding-top: 14px;
+  }
+  .sort__filter--popularity {
+    width: 203px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    height: 41px;
+    padding-left: 19px;
+  }
+  .sort__filter--triage {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 19px;
+    width: 164px;
+    height: 41px;
+  }
+  .path {
+    padding-top: 32px;
+  }
+  .path__title {
+    font-size: 14px;
+  }
+  .form {
+    display: inline-flex;
+    left: 0;
+    right: auto;
+    gap: 32px;
+  }
+  .form__box {
+    display: flex;
+    flex-direction: column;
+    min-width: 191px;
+    max-height: 830px;
+    gap: 32px;
+  }
+  .form__box-up-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 }
 
