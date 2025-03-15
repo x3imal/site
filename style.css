@@ -783,14 +783,27 @@ input, button, textarea, select, optgroup {
   flex-direction: column;
   gap: 16px;
 }
+.form__range-label {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 14px;
+}
 .form__range-input {
   width: 100%;
   appearance: none;
   height: 2px;
-  background: black;
+  background: transparent;
   border-radius: 5px;
   outline: none;
-  transition: background 0.3s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  pointer-events: none;
 }
 .form__range-input::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -800,14 +813,34 @@ input, button, textarea, select, optgroup {
   background: black;
   border-radius: 50%;
   cursor: pointer;
+  pointer-events: auto;
 }
-.form__range-label {
-  display: flex;
-  justify-content: space-between;
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
-  gap: 14px;
+.form__range-input::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.form__range-input--min, .form__range-input--max {
+  position: absolute;
+}
+
+.range-container {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.range-track {
+  position: absolute;
+  height: 2px;
+  background: black;
+  border-radius: 5px;
 }
 
 .radio {
@@ -902,7 +935,9 @@ input, button, textarea, select, optgroup {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
+}
+.color__input:checked + .color__swatch[data-color=white]::after, .color__input:checked + .color__swatch[data-color=yellow]::after, .color__input:checked + .color__swatch[data-color=lavender]::after, .color__input:checked + .color__swatch[data-color=pink]::after {
+  color: black;
 }
 
 .color__box-first, .color__box-second {

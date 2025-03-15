@@ -95,14 +95,28 @@
     flex-direction: column;
     gap: 16px;
 
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+      gap: 14px;
+    }
+
     &-input {
       width: 100%;
       appearance: none;
       height: 2px;
-      background: black;
+      background: transparent;
       border-radius: 5px;
       outline: none;
-      transition: background 0.3s;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0;
+      pointer-events: none;
 
       &::-webkit-slider-thumb {
         -webkit-appearance: none;
@@ -112,18 +126,41 @@
         background: black;
         border-radius: 50%;
         cursor: pointer;
+        pointer-events: auto;
+      }
+
+      &::-moz-range-thumb {
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 50%;
+        cursor: pointer;
+        pointer-events: auto;
+      }
+
+      &--min,
+      &--max {
+        position: absolute;
       }
     }
-
-    &-label {
-      display: flex;
-      justify-content: space-between;
-      color: #000;
-      font-size: 14px;
-      font-weight: 400;
-      gap: 14px;
-    }
   }
+}
+
+
+.range-container {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.range-track {
+  position: absolute;
+  height: 2px;
+  background: black;
+  border-radius: 5px;
 }
 
 .radio {
@@ -228,7 +265,15 @@
       top: 45%;
       left: 50%;
       transform: translate(-50%, -50%);
-      mix-blend-mode: difference;
+      //mix-blend-mode: difference;
+    }
+
+    &[data-color="white"]::after,
+    &[data-color="yellow"]::after,
+    &[data-color="lavender"]::after,
+    &[data-color="pink"]::after
+    {
+      color: black;
     }
   }
 }
