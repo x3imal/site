@@ -189,7 +189,7 @@ input, button, textarea, select, optgroup {
   margin-top: 64px;
 }
 .offers__title {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-weight: 600;
   font-size: 48px;
   margin-top: 64px;
@@ -234,7 +234,7 @@ input, button, textarea, select, optgroup {
 .offer__price {
   font-size: 24px;
   font-weight: 500;
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   line-height: 29px;
 }
 .offer__price--old {
@@ -285,7 +285,7 @@ input, button, textarea, select, optgroup {
 }
 .catalog__price {
   font-size: 24px;
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-weight: 500;
   line-height: 29px;
 }
@@ -294,7 +294,7 @@ input, button, textarea, select, optgroup {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -320,7 +320,7 @@ input, button, textarea, select, optgroup {
 }
 .sort__filter--triage {
   cursor: pointer;
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -330,7 +330,7 @@ input, button, textarea, select, optgroup {
   padding-left: 23px;
 }
 .sort__filter--popularity {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -342,13 +342,12 @@ input, button, textarea, select, optgroup {
 
 .link-box {
   flex-shrink: 0;
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-family: "Montserrat", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
@@ -358,7 +357,12 @@ input, button, textarea, select, optgroup {
   margin-bottom: 64px;
 }
 .link-box__link {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
+  text-decoration: underline;
+}
+.link-box__link:hover {
+  color: #888888;
+  text-decoration: none;
 }
 
 .footer {
@@ -371,7 +375,7 @@ input, button, textarea, select, optgroup {
   justify-content: space-between;
 }
 .footer__logo-pic {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
 }
 .footer__menu {
   display: flex;
@@ -380,7 +384,7 @@ input, button, textarea, select, optgroup {
   gap: 12px;
 }
 .footer__menu-title {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
@@ -408,7 +412,7 @@ input, button, textarea, select, optgroup {
   gap: 12px;
 }
 .footer__contacts-title {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
@@ -440,7 +444,7 @@ input, button, textarea, select, optgroup {
   flex-direction: column;
 }
 .footer__subscribe-title {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-size: 12px;
   font-weight: 400;
   padding-bottom: 8px;
@@ -478,6 +482,15 @@ input, button, textarea, select, optgroup {
 }
 .footer__input::placeholder {
   color: #CACDD8;
+}
+
+.icon:hover path {
+  fill: black;
+}
+
+.footer__button:hover {
+  background-color: black;
+  color: white;
 }
 
 .top-cart {
@@ -550,7 +563,7 @@ input, button, textarea, select, optgroup {
   border-bottom: 1px solid #CACDD8;
 }
 .cart__right .cart__form-input::placeholder {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   text-align: start;
   font-size: 14px;
   font-style: normal;
@@ -577,7 +590,7 @@ input, button, textarea, select, optgroup {
   max-width: 290px;
   height: 41px;
   margin-top: 18px;
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -609,7 +622,7 @@ input, button, textarea, select, optgroup {
   flex: 1;
 }
 .cart__item-title {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -625,7 +638,7 @@ input, button, textarea, select, optgroup {
   margin-top: 14px;
 }
 .cart__item-price {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -645,7 +658,7 @@ input, button, textarea, select, optgroup {
   margin-top: 15px;
 }
 .cart__item-favorite, .cart__item-remove {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
 }
 .cart__item-quantity {
   display: flex;
@@ -671,7 +684,7 @@ input, button, textarea, select, optgroup {
   justify-content: center;
 }
 .cart__item-quantity button:hover {
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
 }
 
 .item-quantity {
@@ -681,7 +694,7 @@ input, button, textarea, select, optgroup {
   border: none;
   background: transparent;
   font-size: 18px;
-  color: #050505;
+  color: rgba(0, 0, 0, 0.96);
   outline: none;
   -moz-appearance: textfield;
 }
@@ -697,8 +710,13 @@ input, button, textarea, select, optgroup {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  border: 1px solid #050505;
+  border: 1px solid rgba(0, 0, 0, 0.96);
   background: transparent;
+}
+
+.cart__button:hover {
+  background: rgba(0, 0, 0, 0.96);
+  color: white;
 }
 
 .filter-wrapper {
@@ -710,9 +728,11 @@ input, button, textarea, select, optgroup {
 }
 
 .sort__filter--triage {
+  position: relative;
   background-image: url("./img/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 22px center;
+  background-color: transparent;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
@@ -720,10 +740,10 @@ input, button, textarea, select, optgroup {
 }
 
 .form {
-  display: inline-flex;
   position: absolute;
-  top: 100%;
-  right: 0;
+  display: inline-flex;
+  top: 120%;
+  right: 230px;
   padding: 40px 48px;
   gap: 10px;
   font-family: "Montserrat", serif;
@@ -996,14 +1016,14 @@ input, button, textarea, select, optgroup {
     background: var(--Color---7, #000);
     color: #FFF;
   }
-  .form {
-    display: none;
+  .sort {
+    position: relative;
   }
-  .form__tablet {
-    display: inline-flex;
+  .form {
     position: absolute;
-    top: 63%;
+    top: 120%;
     right: 0;
+    left: auto;
     padding: 40px 48px;
     gap: 10px;
     font-family: "Montserrat", serif;

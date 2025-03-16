@@ -10,9 +10,11 @@
 }
 
 .sort__filter--triage {
+  position: relative;
   background-image: url("./img/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 22px center;
+  background-color: transparent;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
@@ -20,10 +22,10 @@
 }
 
 .form {
-  display: inline-flex;
   position: absolute;
-  top: 100%;
-  right: 0;
+  display: inline-flex;
+  top: 120%;
+  right: 230px;
   padding: 40px 48px;
   gap: 10px;
   font-family: $font-family;
@@ -265,7 +267,6 @@
       top: 45%;
       left: 50%;
       transform: translate(-50%, -50%);
-      //mix-blend-mode: difference;
     }
 
     &[data-color="white"]::after,
@@ -304,5 +305,4 @@
 .form__toggle {
   display: none;
 }
-
 

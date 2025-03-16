@@ -144,6 +144,7 @@ input, button, textarea, select, optgroup {
     line-height: 24px;
 }
 
+
 .heading {
     margin-top: $spacing-xlarge;
     font-size: $font-size-xlarge;
@@ -378,7 +379,6 @@ input, button, textarea, select, optgroup {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: none;
     text-decoration-thickness: auto;
@@ -389,6 +389,12 @@ input, button, textarea, select, optgroup {
 
     &__link {
         color: $color-primary;
+        text-decoration: underline;
+    }
+
+    &__link:hover {
+        color: #888888;
+        text-decoration: none;
     }
 }
 
@@ -478,7 +484,9 @@ input, button, textarea, select, optgroup {
             gap: 20px;
             width: 100%;
         }
+
     }
+
 
     &__subscribe {
         display: flex;
@@ -529,6 +537,15 @@ input, button, textarea, select, optgroup {
     &__input::placeholder {
         color: $color-border;
     }
+}
+
+.icon:hover path{
+    fill: black;
+}
+
+.footer__button:hover {
+    background-color: black ;
+    color: white;
 }
 
 @import 'cart';
