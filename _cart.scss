@@ -247,6 +247,7 @@
   border-radius: 50px;
   border: 1px solid $color-primary;
   background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cart__button:hover {
@@ -254,3 +255,18 @@
   color: white;
 }
 
+.cart__form-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.cart__form-button:hover {
+  color: black;
+  transform: scale(1.05);
+  background-color: #bababa;
+
+}
+
+.cart__form-button:active {
+  transform: scale(0.95);
+}

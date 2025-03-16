@@ -359,6 +359,7 @@ input, button, textarea, select, optgroup {
 .link-box__link {
   color: rgba(0, 0, 0, 0.96);
   text-decoration: underline;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .link-box__link:hover {
   color: #888888;
@@ -438,6 +439,7 @@ input, button, textarea, select, optgroup {
   justify-content: start;
   gap: 20px;
   width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .footer__subscribe {
   display: flex;
@@ -488,9 +490,14 @@ input, button, textarea, select, optgroup {
   fill: black;
 }
 
+.footer__button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .footer__button:hover {
   background-color: black;
   color: white;
+  transition: 1ms;
 }
 
 .top-cart {
@@ -712,11 +719,26 @@ input, button, textarea, select, optgroup {
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.96);
   background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cart__button:hover {
   background: rgba(0, 0, 0, 0.96);
   color: white;
+}
+
+.cart__form-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cart__form-button:hover {
+  color: black;
+  transform: scale(1.05);
+  background-color: #bababa;
+}
+
+.cart__form-button:active {
+  transform: scale(0.95);
 }
 
 .filter-wrapper {

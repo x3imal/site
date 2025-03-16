@@ -390,6 +390,7 @@ input, button, textarea, select, optgroup {
     &__link {
         color: $color-primary;
         text-decoration: underline;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     &__link:hover {
@@ -483,6 +484,7 @@ input, button, textarea, select, optgroup {
             justify-content: start;
             gap: 20px;
             width: 100%;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
     }
@@ -543,9 +545,15 @@ input, button, textarea, select, optgroup {
     fill: black;
 }
 
+.footer__button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .footer__button:hover {
     background-color: black ;
     color: white;
+    transition: 1ms;
+
 }
 
 @import 'cart';
